@@ -134,7 +134,7 @@ func runblockchain(listenF *int, target *string, seed *int64, secio *bool, suffi
 
 		// Create a thread to read and write data.
 		go blockchain.WriteData(rw)
-		go blockchain.ReadData(rw)
+		//go blockchain.ReadData(rw)
 
 		select {} // hang forever
 
